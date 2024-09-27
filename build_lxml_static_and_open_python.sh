@@ -1,3 +1,6 @@
+# Builds lxml and its dependences statically on a GCP Debian VM,
+# and opens an interactive Python session where you can use lxml in-place
+
 sudo apt install build-essential gcc git python3-dev python3-venv -y
 python3 -m venv venv
 source venv/bin/activate
