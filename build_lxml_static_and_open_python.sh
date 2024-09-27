@@ -1,3 +1,5 @@
+# To be sourced, not sh'ed
+
 # Builds lxml and its dependences statically on a GCP Debian VM,
 # and opens an interactive Python session where you can use lxml in-place
 
