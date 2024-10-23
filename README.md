@@ -1,6 +1,6 @@
 # lxml scripts
 
-This repo contains two scripts that build lxml from source code on a newly created Debian Linux bookworm GCP compute VM. They must be run from the home directory. Also, they probably work in many similar environments, perhaps with minor modifications. They are based on the [lxml documentation](https://lxml.de/) for building the library, but written in the form of a single script.
+This repo contains two scripts that build lxml from source code on a newly created Debian Linux bookworm GCP Compute VM. They must be run from the home directory. Also, they probably work in many similar environments, perhaps with minor modifications. They are based on the [lxml documentation](https://lxml.de/) for building the library, but written in the form of a single script.
 
 ## The scripts
 
