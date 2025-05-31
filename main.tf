@@ -12,6 +12,14 @@ terraform {
 #    location = "us-central1"
 #}
 
+# This should be supplied from the command line via
+# the terraform-<operation>-wrapper.sh one-line (for now) scripts.
+# Do not enter interactively
+
+variable "project_id" {
+    type = string
+}
+
 provider "google" {
     project = var.project_id
 }
