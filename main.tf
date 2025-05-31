@@ -33,6 +33,7 @@ resource "google_storage_bucket" "startup_script_bucket" {
 #    location = local.location
     location = "us-central1"
     storage_class = "STANDARD"
+    force_destroy = true
     # uniform_bucket_level_access disables ACLs, which are only useful
     # in legacy contexts and migrations from AWS
     uniform_bucket_level_access = true
