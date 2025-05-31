@@ -29,7 +29,7 @@ resource "random_id" "startup_script_bucket_id" {
 }
 
 resource "google_storage_bucket" "startup_script_bucket" {
-    name = "${random_id.startup_script_bucket_id.hex}-startup-script-bucket"
+    name = "${random_id.startup_script_bucket_id.hex}-lxml-startup-script-bucket"
 #    location = local.location
     location = "us-central1"
     storage_class = "STANDARD"
@@ -41,7 +41,7 @@ resource "google_storage_bucket" "startup_script_bucket" {
 
 resource "google_storage_bucket_object" "startup_script" {
     bucket = google_storage_bucket.startup_script_bucket.name
-    name = "startup-script"
+    name = "lxml-startup-script"
     source = "build_lxml_and_open_python.sh"
 }
 
