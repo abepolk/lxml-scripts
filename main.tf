@@ -5,7 +5,7 @@ terraform {
             version = "6.37.0"
         }
     }
-    required_version = "~> 1.12.1"
+    required_version = "~> 1.5.7"
 }
 
 #locals {
